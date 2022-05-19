@@ -71,6 +71,11 @@ for (changes of supplyChanges) {
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
+let supplyChangesTotal = 0
+for (let i=0; i< supplyChanges.length; i++) {
+    supplyChangesTotal+= supplyChanges[i];
+}
+console.log(supplyChangesTotal);
 
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
@@ -79,3 +84,17 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let stashOfParts = 572
+let boxOfParts = 0
+let filledBoxes = 0
+
+while (stashOfParts>7) {
+    stashOfParts-=7
+    boxOfParts+=7
+
+        if (boxOfParts >= 7) {
+            filledBoxes+=1
+        }
+}
+console.log('we have',filledBoxes ,'filled boxes');
+console.log('and we have',stashOfParts ,'parts left over');

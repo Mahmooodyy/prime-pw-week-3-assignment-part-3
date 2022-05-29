@@ -19,7 +19,6 @@ console.log(supplyChanges [1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
-// comment
 let removedItem = supplyChanges.pop()
 console.log('4. Removed item:',removedItem );
 
@@ -35,17 +34,17 @@ console.log(supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
 for (let i = 0; i<supplyChanges.length; i++) {
-     console.log(supplyChanges[i]);
 
-     if (supplyChanges[i]>0) {
-        console.log('Added x parts.');    
+    
+if (supplyChanges[i]>0) {
+    console.log('Added',supplyChanges[i], 'parts.');    
+    }
+    else if (supplyChanges[i]===0) {
+        console.log('No Change.');    
         }
-        else if (supplyChanges[i]===0) {
-           console.log('No Change.');    
-           }
-           else if (supplyChanges[i]<0) {
-               console.log('Removed x parts');    
-               }
+        else if (supplyChanges[i]<0) {
+            console.log('Removed',supplyChanges[i],'parts');    
+            }
 
 }
 
@@ -55,17 +54,17 @@ console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
 for (changes of supplyChanges) {
-    console.log(changes);
 
-    if (changes>0) {
-        console.log('Added x parts.');    
+
+if (changes>0) {
+    console.log('Added', changes, 'parts.');    
+    }
+    else if (changes===0) {
+        console.log('No Change.');    
         }
-        else if (changes===0) {
-           console.log('No Change.');    
-           }
-           else if (changes<0) {
-               console.log('Removed x parts');    
-               }
+        else if (changes<0) {
+            console.log('Removed', changes, 'parts');    
+            }
 }
 
 // 8. Write a loop to determine the total number of parts available by

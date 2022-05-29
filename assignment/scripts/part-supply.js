@@ -19,6 +19,7 @@ console.log(supplyChanges [1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
+// comment
 let removedItem = supplyChanges.pop()
 console.log('4. Removed item:',removedItem );
 
